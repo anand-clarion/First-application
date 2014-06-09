@@ -1,3 +1,4 @@
 class Article < ActiveRecord::Base
-  # attr_accessible :title, :body
+  belongs_to :user
+  attr_accessible :title, :description, :user_id
 end
