@@ -17,7 +17,7 @@ class ArticlesController < ApplicationController
   end
   
   def index
-  	@article = Article.all
+  	@articles = current_user.articles
   end
 
   def edit

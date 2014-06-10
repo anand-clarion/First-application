@@ -16,8 +16,7 @@ border:1px solid black;
     <th style = "padding:6px">User_id</th>
     <th style = "padding:6px" colspan="6">Actions</th>
   </tr>
- 
-  <% @article.each do |article| %>
+  <% @articles.each do |article| %>
     <tr>
       <td style ="color:SaddleBrown;padding:5px"><%= article.title %></td>
       <td style ="color:MidnightBlue;padding:10px"><%= article.description %></td>
@@ -28,4 +27,8 @@ border:1px solid black;
     </tr>
   <% end %>
 </table>
-<%= link_to 'New Article', new_article_path %></td>    
+<p>
+<%= link_to 'Create New Article', new_article_path %></td> 
+</p>  
+
+<%= current_user.id %> 

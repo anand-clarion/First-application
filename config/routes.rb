@@ -3,6 +3,7 @@ NewBlog::Application.routes.draw do
 
   root :to => 'welcome#index'
   resources :articles
+  resources :users
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
